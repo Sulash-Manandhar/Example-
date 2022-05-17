@@ -1,0 +1,15 @@
+HTML and CSS 
+
+Name,
+Email,
+Password,
+Phone (10 digit)
+Gender (Radio)
+DOB - [yyyy/mm/dd]
+Hobbies (checkbox)
+    Football
+    Swimming
+    Singing
+    Circket
+    Other
+Tell about (text area) (min:10 , max:250 character) 

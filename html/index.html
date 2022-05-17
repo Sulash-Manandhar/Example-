@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTMl form</title>
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="main">
+        <div class="header">
+          <h2>HTML and CSS Form</h2>
+        </div>
+        <form action="#">
+          <fieldset>
+            <legend>Registration Form</legend>
+            <!-- Full Name  -->
+            <div>
+              <label for="name"> Full Name</label><br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="common-form"
+                placeholder="Example Example"
+                required
+              />
+            </div>
+
+            <!-- Email Address  -->
+            <div>
+              <label for="email">Email Address</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="common-form"
+                placeholder="example@example.com"
+                required
+              />
+            </div>
+
+            <!-- Date of Birth  -->
+            <div>
+              <!-- Date selection  -->
+              <span class="date">
+                <label for="day">Day</label><br />
+                <select id="day" name="day" required>
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">5</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+              </span>
+              <!-- Date selection  -->
+              <span class="date">
+                <label for="month">Month</label><br />
+                <select id="month" name="month" required>
+                  <option selected>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select>
+              </span>
+              <!-- Year selection  -->
+              <span class="date">
+                <label for="year">Year</label><br />
+                <select id="year" name="year" required>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000" selected>2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">20010</option>
+                  <option value="2011">20011</option>
+                  <option value="2012">20012</option>
+                  <option value="2013">20013</option>
+                  <option value="2014">20014</option>
+                  <option value="2015">20015</option>
+                  <option value="2016">20016</option>
+                  <option value="2017">20017</option>
+                  <option value="2018">20018</option>
+                  <option value="2019">20019</option>
+                  <option value="2020">2020</option>
+                </select>
+              </span>
+            </div>
+            <!-- Phone number with validation  -->
+            <div>
+              <label for="phone">Phone Number</label><br />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="common-form"
+                placeholder="98********"
+                pattern="[9]{1}[8]{1}[0-9]{8}"
+                title="Should be 10 digits and should start with 98******"
+                required
+              />
+            </div>
+            <!-- Gender selection select tag -->
+            <div>
+              <label>Select your Gender</label><br />
+              <select name="gender" id="gender" required>
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Checkbox statement  -->
+            <div>
+              <span>Select your Hobbies</span>
+              <input
+                type="checkbox"
+                id="hobbie1"
+                name="swimming"
+                value="swimming"
+                checked
+              />
+              <label for="hobbie1"> Swimming</label><br />
+              <input
+                type="checkbox"
+                id="hobbie2"
+                name="football"
+                value="football"
+              />
+              <label for="hobbie2"> Football</label><br />
+              <input
+                type="checkbox"
+                id="hobbie3"
+                name="cricket"
+                value="cricket"
+              />
+              <label for="hobbie3"> Cricket</label><br />
+              <input type="checkbox" id="hobbie4" name="others" value="other" />
+              <label for="hobbie4"> Others</label><br />
+            </div>
+            <!-- Textarea -->
+            <div>
+              <span>Something about yourself</span>
+              <textarea id="textarea" minlength="10" maxlength="250" required>
+I like to 
+            </textarea
+              >
+            </div>
+
+            <!-- Button group  -->
+            <div class="btn-group">
+              <button
+                type="reset"
+                class="btn"
+                style="background-color: #596168"
+                value="reset"
+              >
+                Reset
+              </button>
+              <button
+                type="submit"
+                class="btn"
+                style="background-color: rebeccapurple"
+                value="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
